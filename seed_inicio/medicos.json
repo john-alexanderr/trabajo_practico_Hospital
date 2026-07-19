@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "matricula": "M-10234",
+    "nombre": "Roberto",
+    "apellido": "Díaz",
+    "especialidad": "Cardiología",
+    "telefono": "11-4444-1111"
+  },
+  {
+    "id": 2,
+    "matricula": "M-11567",
+    "nombre": "Elena",
+    "apellido": "Vargas",
+    "especialidad": "Neurología",
+    "telefono": "11-4444-2222"
+  },
+  {
+    "id": 3,
+    "matricula": "M-12890",
+    "nombre": "Miguel",
+    "apellido": "Herrera",
+    "especialidad": "Cirugía General",
+    "telefono": "11-4444-3333"
+  },
+  {
+    "id": 4,
+    "matricula": "M-13145",
+    "nombre": "Carmen",
+    "apellido": "Silva",
+    "especialidad": "Pediatría",
+    "telefono": "11-4444-4444"
+  },
+  {
+    "id": 5,
+    "matricula": "M-14678",
+    "nombre": "Andrés",
+    "apellido": "Molina",
+    "especialidad": "Traumatología",
+    "telefono": "11-4444-5555"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "dni": "30123456",
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "edad": 45,
+    "telefono": "11-2345-6789",
+    "obra_social": "OSDE"
+  },
+  {
+    "id": 2,
+    "dni": "27456123",
+    "nombre": "María",
+    "apellido": "González",
+    "edad": 32,
+    "telefono": "11-3456-7890",
+    "obra_social": "Swiss Medical"
+  },
+  {
+    "id": 3,
+    "dni": "33214567",
+    "nombre": "Carlos",
+    "apellido": "Rodríguez",
+    "edad": 68,
+    "telefono": "11-4567-8901",
+    "obra_social": "PAMI"
+  },
+  {
+    "id": 4,
+    "dni": "25123654",
+    "nombre": "Ana",
+    "apellido": "Martínez",
+    "edad": 28,
+    "telefono": "11-5678-9012",
+    "obra_social": "Galeno"
+  },
+  {
+    "id": 5,
+    "dni": "36147852",
+    "nombre": "Luis",
+    "apellido": "Fernández",
+    "edad": 55,
+    "telefono": "11-6789-0123",
+    "obra_social": "OSDE"
+  },
+  {
+    "id": 6,
+    "dni": "28963214",
+    "nombre": "Laura",
+    "apellido": "López",
+    "edad": 41,
+    "telefono": "11-7890-1234",
+    "obra_social": "Swiss Medical"
+  },
+  {
+    "id": 7,
+    "dni": "31478523",
+    "nombre": "Pedro",
+    "apellido": "Sánchez",
+    "edad": 19,
+    "telefono": "11-8901-2345",
+    "obra_social": "Sancor Salud"
+  },
+  {
+    "id": 8,
+    "dni": "26741235",
+    "nombre": "Sofía",
+    "apellido": "Romero",
+    "edad": 36,
+    "telefono": "11-9012-3456",
+    "obra_social": "OSDE"
+  },
+  {
+    "id": 9,
+    "dni": "35236471",
+    "nombre": "Diego",
+    "apellido": "Torres",
+    "edad": 50,
+    "telefono": "11-0123-4567",
+    "obra_social": "PAMI"
+  },
+  {
+    "id": 10,
+    "dni": "28145632",
+    "nombre": "Valentina",
+    "apellido": "Ruiz",
+    "edad": 24,
+    "telefono": "11-1234-5678",
+    "obra_social": "Galeno"
+  }
+]

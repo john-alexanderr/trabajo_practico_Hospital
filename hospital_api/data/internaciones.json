@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "paciente_id": 3,
+    "medico_id": 1,
+    "fecha_ingreso": "2026-07-10",
+    "diagnostico": "Infarto agudo de miocardio",
+    "habitacion": 101,
+    "estado": "Activa"
+  },
+  {
+    "id": 2,
+    "paciente_id": 1,
+    "medico_id": 2,
+    "fecha_ingreso": "2026-07-12",
+    "diagnostico": "Accidente cerebrovascular isquémico",
+    "habitacion": 205,
+    "estado": "Activa"
+  },
+  {
+    "id": 3,
+    "paciente_id": 5,
+    "medico_id": 3,
+    "fecha_ingreso": "2026-07-08",
+    "diagnostico": "Apendicitis aguda",
+    "habitacion": 310,
+    "estado": "Alta"
+  },
+  {
+    "id": 4,
+    "paciente_id": 9,
+    "medico_id": 5,
+    "fecha_ingreso": "2026-07-14",
+    "diagnostico": "Fractura de cadera",
+    "habitacion": 102,
+    "estado": "Activa"
+  },
+  {
+    "id": 5,
+    "paciente_id": 4,
+    "medico_id": 4,
+    "fecha_ingreso": "2026-07-11",
+    "diagnostico": "Neumonía bilateral",
+    "habitacion": 208,
+    "estado": "Activa"
+  },
+  {
+    "id": 7,
+    "paciente_id": 2,
+    "medico_id": 3,
+    "fecha_ingreso": "2026-07-17",
+    "diagnostico": "Narcolepcia aguda",
+    "habitacion": 12,
+    "estado": "activa"
+  }
+]
