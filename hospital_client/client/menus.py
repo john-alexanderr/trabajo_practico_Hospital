@@ -1,29 +1,38 @@
 from client.api_client import HospitalAPIClient
 from client.logger import registrar_log
+from client.terminal import (
+    BOLD,
+    CYAN,
+    DIM,
+    color,
+    print_fail,
+    print_info,
+    print_ok,
+    print_sep,
+    print_subtitle,
+    print_table,
+    print_warn,
+)
 
 
 def leer_entero(mensaje: str) -> int | None:
-    valor = input(mensaje).strip()
+    valor = input(color(mensaje, BOLD)).strip()
     if not valor:
-        print("  ✗ El campo no puede estar vacío.")
+        print_fail("El campo no puede estar vacío.")
         return None
     try:
         return int(valor)
     except ValueError:
-        print("  ✗ Debe ingresar un número válido.")
+        print_fail("Debe ingresar un número válido.")
         return None
 
 
 def leer_texto(mensaje: str, obligatorio: bool = True) -> str | None:
-    valor = input(mensaje).strip()
+    valor = input(color(mensaje, BOLD)).strip()
     if obligatorio and not valor:
-        print("  ✗ El campo no puede estar vacío.")
+        print_fail("El campo no puede estar vacío.")
         return None
     return valor
-
-
-def separador() -> None:
-    print("-" * 40)
 
 
 def mostrar_resultado(resultado: dict) -> None:
@@ -32,38 +41,34 @@ def mostrar_resultado(resultado: dict) -> None:
         if datos:
             if isinstance(datos, list):
                 if not datos:
-                    print("\n  (No hay registros)")
+                    print_warn("No hay registros para mostrar.")
                 else:
-                    for item in datos:
-                        separador()
-                        for k, v in item.items():
-                            print(f"  {k}: {v}")
-                    separador()
-                    print(f"  Total: {len(datos)} registro(s)")
+                    print_table(datos)
             elif isinstance(datos, dict):
-                separador()
+                print_sep()
                 for k, v in datos.items():
-                    print(f"  {k}: {v}")
-                separador()
+                    print_info(f"{k}: {v}")
+                print_sep()
         else:
-            print(f"  ✓ {resultado.get('mensaje', 'Operación exitosa.')}")
+            print_ok(resultado.get("mensaje", "Operación exitosa."))
     else:
-        print(f"  ✗ {resultado.get('mensaje', 'Error desconocido.')}")
+        print_fail(resultado.get("mensaje", "Error desconocido."))
 
 
 def _submenu(titulo: str, acciones: dict[str, tuple]) -> None:
     while True:
-        print(f"\n--- {titulo} ---")
+        print_subtitle(titulo)
         for k, (desc, _) in acciones.items():
-            print(f"{k} - {desc}")
-        opcion = input("\nSeleccione una opción: ").strip()
+            print(color(f"  {k}) {desc}", CYAN))
+        opcion = input(color("\n  Seleccione una opción: ", BOLD)).strip()
         if opcion in acciones:
             _, fn = acciones[opcion]
             fn()
+            input(color("\n  Presione Enter para continuar...", DIM))
         elif opcion == str(len(acciones)):
             break
         else:
-            print("  ✗ Opción no válida.")
+            print_fail("Opción no válida.")
 
 
 # --- Pacientes ---
