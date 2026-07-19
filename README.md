@@ -111,6 +111,6 @@ hospital-api-client-main/
 
 <div align="center">
 
-**Desarrollado por Juan Rastellini** · Grupo 20
+**Desarrollado por Juan Rastellini**
 
 </div>
